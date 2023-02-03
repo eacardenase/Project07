@@ -13,6 +13,10 @@
 		208064F6298B47670086E365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208064F4298B47670086E365 /* Main.storyboard */; };
 		208064F8298B47680086E365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208064F7298B47680086E365 /* Assets.xcassets */; };
 		208064FB298B47680086E365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208064F9298B47680086E365 /* LaunchScreen.storyboard */; };
+		20806509298B51590086E365 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20806508298B51590086E365 /* Petition.swift */; };
+		2080650B298B521D0086E365 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2080650A298B521D0086E365 /* Petitions.swift */; };
+		2080650D298B55A30086E365 /* PetitionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2080650C298B55A30086E365 /* PetitionsManager.swift */; };
+		2080650F298B5E4C0086E365 /* PetitionsManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2080650E298B5E4C0086E365 /* PetitionsManagerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		208064FA298B47680086E365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		208064FC298B47680086E365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20806504298B4B4E0086E365 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		20806508298B51590086E365 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
+		2080650A298B521D0086E365 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
+		2080650C298B55A30086E365 /* PetitionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionsManager.swift; sourceTree = "<group>"; };
+		2080650E298B5E4C0086E365 /* PetitionsManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionsManagerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +68,41 @@
 			children = (
 				208064EE298B47670086E365 /* AppDelegate.swift */,
 				208064F0298B47670086E365 /* SceneDelegate.swift */,
-				208064F2298B47670086E365 /* ViewController.swift */,
-				208064F4298B47670086E365 /* Main.storyboard */,
+				20806507298B51040086E365 /* Model */,
+				20806506298B50F40086E365 /* View */,
+				20806505298B50E90086E365 /* Controller */,
 				208064F7298B47680086E365 /* Assets.xcassets */,
 				208064F9298B47680086E365 /* LaunchScreen.storyboard */,
 				208064FC298B47680086E365 /* Info.plist */,
 			);
 			path = Project07;
+			sourceTree = "<group>";
+		};
+		20806505298B50E90086E365 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				208064F2298B47670086E365 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20806506298B50F40086E365 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				208064F4298B47670086E365 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20806507298B51040086E365 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20806508298B51590086E365 /* Petition.swift */,
+				2080650A298B521D0086E365 /* Petitions.swift */,
+				2080650C298B55A30086E365 /* PetitionsManager.swift */,
+				2080650E298B5E4C0086E365 /* PetitionsManagerDelegate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				208064F3298B47670086E365 /* ViewController.swift in Sources */,
+				2080650B298B521D0086E365 /* Petitions.swift in Sources */,
+				20806509298B51590086E365 /* Petition.swift in Sources */,
 				208064EF298B47670086E365 /* AppDelegate.swift in Sources */,
 				208064F1298B47670086E365 /* SceneDelegate.swift in Sources */,
+				2080650D298B55A30086E365 /* PetitionsManager.swift in Sources */,
+				2080650F298B5E4C0086E365 /* PetitionsManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
