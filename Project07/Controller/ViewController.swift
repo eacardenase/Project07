@@ -34,6 +34,15 @@ class ViewController: UITableViewController, PetitionsManagerDelegate {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let petition = petitions[indexPath.row]
+        
+        let vc = DetailVC()
+        vc.detailItem = petition
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func didUpdatePetitions(_ petitionsManager: PetitionsManager, petitions: Petitions) {
         DispatchQueue.main.async {
             self.petitions = petitions.results

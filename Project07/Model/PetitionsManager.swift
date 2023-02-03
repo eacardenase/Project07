@@ -45,8 +45,6 @@ struct PetitionsManager {
             let jsonPetitions = try decoder.decode(Petitions.self, from: petitionsData)
             let petitions = jsonPetitions
             
-            print(petitions)
-            
             return petitions
         } catch {
             delegate?.didFailWithError(error: error)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20644C45298CAA8C0047EB2F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20644C44298CAA8C0047EB2F /* DetailVC.swift */; };
 		208064EF298B47670086E365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208064EE298B47670086E365 /* AppDelegate.swift */; };
 		208064F1298B47670086E365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208064F0298B47670086E365 /* SceneDelegate.swift */; };
 		208064F3298B47670086E365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208064F2298B47670086E365 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20644C44298CAA8C0047EB2F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		208064EB298B47670086E365 /* Project07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project07.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208064EE298B47670086E365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		208064F0298B47670086E365 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				208064F2298B47670086E365 /* ViewController.swift */,
+				20644C44298CAA8C0047EB2F /* DetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				20806509298B51590086E365 /* Petition.swift in Sources */,
 				208064EF298B47670086E365 /* AppDelegate.swift in Sources */,
 				208064F1298B47670086E365 /* SceneDelegate.swift in Sources */,
+				20644C45298CAA8C0047EB2F /* DetailVC.swift in Sources */,
 				2080650D298B55A30086E365 /* PetitionsManager.swift in Sources */,
 				2080650F298B5E4C0086E365 /* PetitionsManagerDelegate.swift in Sources */,
 			);
