@@ -11,10 +11,12 @@ struct PetitionsManager {
     
     var delegate: PetitionsManagerDelegate?
     
-    var petitionsURL = "https://www.hackingwithswift.com/samples/petitions-1.json"
+    var petitionsURL: String?
     
     func fetchPetitions() {
-        performRequest(urlString: petitionsURL)
+        if let url = petitionsURL {
+            performRequest(urlString: url)
+        }
     }
     
     func performRequest(urlString: String) {

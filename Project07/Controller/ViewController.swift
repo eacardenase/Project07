@@ -17,6 +17,13 @@ class ViewController: UITableViewController, PetitionsManagerDelegate {
         super.viewDidLoad()
         
         petitionsManager.delegate = self
+        
+        if navigationController?.tabBarItem.tag == 0 {
+            petitionsManager.petitionsURL = "https://www.hackingwithswift.com/samples/petitions-1.json"
+        } else {
+            petitionsManager.petitionsURL = "https://www.hackingwithswift.com/samples/petitions-2.json"
+        }
+        
         petitionsManager.fetchPetitions()
     }
     
@@ -51,7 +58,12 @@ class ViewController: UITableViewController, PetitionsManagerDelegate {
     }
     
     func didFailWithError(error: Error) {
-        print(error)
+        let message = "There was a problem loading the feed; please check your connection and try again. \(error.localizedDescription)"
+        
+        let ac = UIAlertController(title: "Loading error", message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        present(ac, animated: true)
     }
 
 }
